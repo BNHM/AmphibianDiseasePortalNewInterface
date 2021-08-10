@@ -1,5 +1,5 @@
 # About
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9ab3e478-3865-417a-aedf-2fd5669cc973/deploy-status)](https://app.netlify.com/sites/futres-data-interface/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b9fc7858-c920-402b-9da3-c1dec04f5af3/deploy-status)](https://app.netlify.com/sites/amphibiandiseaseportalnewinterface/deploys)
 
 A lightweight interface for visualizing plant phenology, drawing on data that has been indexed using the 
 [ppo-data-pipeline](https://github.com/biocodellc/ppo-data-pipeline).  This interface is written
