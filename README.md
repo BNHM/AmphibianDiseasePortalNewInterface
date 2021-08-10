@@ -1,10 +1,11 @@
 # About
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b9fc7858-c920-402b-9da3-c1dec04f5af3/deploy-status)](https://app.netlify.com/sites/amphibiandiseaseportalnewinterface/deploys)
 
-A lightweight interface for visualizing amphibian disease, drawing on data that has been validated and loaded into GEOME.  This interface is written
-in angularJS v1.7 and bootstrap v3.x and calls ElasticSearch at https://www.plantphenology.org/api/v1/query/ using the futres index.
+View running site at: https://amphibiandiseaseportalnewinterface.netlify.app
 
-The master branch of this repository is hosted on netlify and currently running at: https://futres-data-interface.netlify.app/
+A lightweight interface for visualizing amphibian disease, drawing on data that has been validated and loaded into GEOME.  This interface is written
+in angularJS v1.7 and bootstrap v3.x and calls ElasticSearch at https://www.plantphenology.org/api/v1/query/ using the amphibiandisease index.
+
 
 # first time installation steps
 ```
