@@ -1,7 +1,7 @@
 {
-  "name": "futres-data-interface",
+  "name": "AmphibianDiseasePortalNewInterface",
   "version": "1.0.0",
-  "description": "A lightweight interface for visualizing vertebrate traits, drawing on data that has been indexed using the  [https://github.com/futres/fovt-data-pipeline](fovt-data-pipeline).  This interface is written in angularJS, leaflet, and bootstrap and calls data services using the  [https://github.com/biocodellc/ppo-data-server](ppo-data-server).",
+  "description": "A lightweight interface for visualizing vertebrate traits, drawing on data that has been indexed using the AmphibiaWeb Portal Interface.  This interface is written in angularJS, leaflet, and bootstrap and calls data services using the  [https://github.com/biocodellc/biscicol-server](biscicol-server).",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^4.0.2",
@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/futres/futres-data-interface.git"
+    "url": "git+https://github.com/bnhm/AmphibianDiseasePortalNewInterface.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/futres/futres-data-interface/issues"
+    "url": "https://github.com/bnhm/AmphibianDiseasePortalNewInterface/issues"
   },
   "homepage": "https://github.com/futres/futres-data-interface#readme"
 }
