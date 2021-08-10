@@ -161,46 +161,23 @@
             of your query.
           </div>
 
-          <h3>Search any name</h3>
-          <eui-searchbox field="'scientificName'"></eui-searchbox>
+          <h3>Disease Tested</h3> <eui-singleselect field="'diseaseTested'" size="10" ></eui-singleselect>
 
-	  <!--<h3>Day of Year</h3>
-	  // These work, sort of ... however, code only allows one query of these types at a time
-	  // Need to research how to have multiple query conditions
-	  Min <input type="text" eui-query="ejs.RangeQuery('dayOfYear').gte(minDay)" ng-model="minDay" eui-enabled="minDay.length" size="4" />
-	  Max <input type="text" eui-query="ejs.RangeQuery('dayOfYear').lte(maxDay)" ng-model="maxDay" eui-enabled="maxDay.length" size="4" />
-	  -->
+          <h3>Disease Detected</h3> <eui-singleselect field="'diseaseDetected'" size="500" ></eui-singleselect>
 
-          <h3>Disease Tested</h3>
-          <eui-singleselect
-            field="'diseaseTested'"
-            size="10"
-          ></eui-singleselect>
+          <h3>Fatal</h3> <eui-singleselect field="'fatal'" size="500" ></eui-singleselect>
 
-          <h3>Disease Detected</h3>
-          <eui-singleselect
-            field="'diseaseDetected'"
-            size="500"
-          ></eui-singleselect>
+          <h3>Sample Type</h3> <eui-singleselect field="'sampleType'" size="500"></eui-singleselect>
 
-          <h3>Country</h3>
-          <eui-singleselect
-            field="'country'"
-            size="500"
-          ></eui-singleselect>
+          <h3>Basis Of Record</h3> <eui-singleselect field="'basisOfRecord'" size="500"></eui-singleselect>
 
-          <h3>Family</h3>
-          <eui-singleselect field="'family'"></eui-singleselect>
+          <h3>Order</h3> <eui-singleselect field="'order'" size="500"></eui-singleselect>
 
-          <h3>Genus (top 50 hits)</h3>
-          <eui-singleselect field="'genus'" size="50"></eui-singleselect>
+          <h3>Family</h3> <eui-singleselect field="'family'" size="500"></eui-singleselect>
 
-          <h3>Sample Type</h3>
-          <eui-singleselect field="'sampleType'"></eui-singleselect>
+          <h3>Genus (top 50 hits)</h3> <eui-singleselect field="'genus'" size="50"></eui-singleselect>
 
-          <h3>Basis Of Record</h3>
-          <eui-singleselect field="'basisOfRecord'"></eui-singleselect>
-
+          <h3>Country</h3> <eui-singleselect field="'country'" size="50" ></eui-singleselect>
 
           <h3>Results Per Page</h3>
           <select ng-model="indexVM.pageSize">
@@ -228,8 +205,7 @@
                 <th scope="col">diseaseDetected</th>
                 <th scope="col">fatal</th>
                 <th scope="col">year</th>
-                <th scope="col">insitution</th>
-                <th scope="col">reference</th>
+                <th scope="col">GUID</th>
               </tr>
             </thead>
             <tbody>
@@ -240,10 +216,8 @@
                 <td>{{doc._source.diseaseDetected}}</td>
                 <td>{{doc._source.fatal}}</td>
                 <td>{{doc._source.yearCollected}}</td>
-                <td>{{doc._source.institutionCode}}</td>
-                <td>{{doc._source.Sample_bcid}}</td>
                 <td>
-			<div ng-if="doc._source.Sample_bcid"><a href='{{doc._source.Sample_bcid}}' target=_blank>{{doc._source.materialSampleID}}</a></div>
+			<div ng-if="doc._source.Sample_bcid"><a href='{{doc._source.Sample_bcid}}' target=_blank>{{doc._source.Sample_bcid}}</a></div>
                 	<div ng-if="!doc._source.Sample_bcid">{{doc._source.materialSampleID}}</div>
 		</td>
                 <!--<td>
